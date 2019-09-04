@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load widget_tweaks %}
+{% block content %}
+
+    <div class="row h-100">
+        <div class="card card-signup col-lg-12 col-xl-6 my-auto mx-auto responsive_width">
+            <div class="card-header">
+                <h2 class="text-center header">SIGNUP</h2>
+            </div>
+            <div style="padding-top: 10px">
+                <form method="POST" enctype="multipart/form-data" class="row">
+                    <div class="col-md-6">
+                        <div class="form-group label-style">
+                            <label for="first_name">First Name:</label>
+                            <input type="text" class="form-control" id="first_name" name='first_name' required
+                                   autocomplete="new-password">
+                        </div>
+
+                        <div class="form-group label-style">
+                            <label for="last_name">Last Name:</label>
+                            <input type="text" class="form-control" id="last_name" name='last_name' required
+                                   autocomplete="new-password">
+                        </div>
+
+                        <div class="form-group label-style">
+                            <label for="username">Username:</label>
+                            <input type="text" class="form-control" id="username" name='username' required
+                                   autocomplete="new-password">
+                        </div>
+
+                        <div class="form-group label-style">
+                            <label for="email">Email:</label>
+                            <input type="text" class="form-control" id="email" name='email' required
+                                   autocomplete="new-password">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group label-style">
+                            <label>Gender: </label><br>
+                            <label>MALE:</label>
+                            <input type="radio" id="" name='gender' value="M"
+                                   autocomplete="new-password">
+                            <label>FEMALE:</label>
+                            <input type="radio" id="" name='gender' value="F"
+                                   autocomplete="new-password">
+
+                        </div>
+                        <div class="form-group label-style" style="margin-top: 22px;">
+                            <label for="password">Password:</label>
+                            <input type="text" class="form-control" id="password" name='password' required
+                                   autocomplete="new-password">
+                        </div>
+
+                        <div class="form-group label-style">
+                            <label for="confirm_password"> Confirm Password:</label>
+                            <input type="text" class="form-control" id="confirm_password" name='confirm_password'
+                                   required
+                                   autocomplete="new-password">
+                        </div>
+
+                        <div style="padding-top: 20px; float: right;">
+                            <input type="submit" class="btn btn-info" value="SIGN UP"
+                                   style="width: 225px;  height: 58px;">
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

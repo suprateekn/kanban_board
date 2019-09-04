@@ -1,0 +1,91 @@
+body{
+    background-color: #818896;
+}
+.card {
+    border: 1px solid #28a745;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.card-header{
+    background-color: #605D64 !important;
+    box-shadow: rgba(0,0,0,0.5) 7px 8px;
+}
+
+.label-style{
+    color: wheat;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+.card-login, .card-signup {
+    margin-top: 130px;
+    padding: 18px;
+    max-width: 30rem;
+}
+
+.text-center{
+    color: black;
+}
+
+.card-header {
+    color: #fff;
+    /*background: #ff0000;*/
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600 !important;
+    margin-top: 10px;
+    border-bottom: 0;
+}
+
+#login {
+    padding: 20px;
+    height: 400px;
+    width: 300px;
+    border-radius: 15px !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+
+#signup {
+    /*height: 80%;*/
+    width: 300px;
+    border-radius: 15px !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.logout {
+    display: none;
+    padding-top: 12px;
+    padding-right: 20px;
+}
+
+@media (max-width: 992px) {
+
+    .contacts_card {
+        height: 100%;
+    }
+
+
+    #login {
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    #signup {
+        line-height: 15px;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .logout {
+        display: block;
+    }
+}
+
+.header{
+    padding-top: 5px;
+    letter-spacing: 2px;
+    color: antiquewhite;
+    font-weight: bolder;
+    font-size: 40px;
+}
