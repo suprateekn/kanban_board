@@ -14,12 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+
 from kanban.views import home_page, login_page, signup_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', login_page),
     path('signup/', signup_page),
-    path('home/', home_page)
+    path('home/', home_page),
+    path('api/', include(('task_board.urls', 'task_board'), namespace='task_board')),
 ]

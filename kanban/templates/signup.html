@@ -8,7 +8,8 @@
                 <h2 class="text-center header">SIGNUP</h2>
             </div>
             <div style="padding-top: 10px">
-                <form method="POST" enctype="multipart/form-data" class="row">
+                <form enctype="multipart/form-data" class="row" id="submit-form" method="POST">
+                    {% csrf_token %}
                     <div class="col-md-6">
                         <div class="form-group label-style">
                             <label for="first_name">First Name:</label>
@@ -39,22 +40,22 @@
                         <div class="form-group label-style">
                             <label>Gender: </label><br>
                             <label>MALE:</label>
-                            <input type="radio" id="" name='gender' value="M"
+                            <input type="radio" name='gender' value="M"
                                    autocomplete="new-password">
                             <label>FEMALE:</label>
-                            <input type="radio" id="" name='gender' value="F"
+                            <input type="radio" name='gender' value="F"
                                    autocomplete="new-password">
 
                         </div>
                         <div class="form-group label-style" style="margin-top: 22px;">
                             <label for="password">Password:</label>
-                            <input type="text" class="form-control" id="password" name='password' required
+                            <input type="password" class="form-control" id="password" name='password' required
                                    autocomplete="new-password">
                         </div>
 
                         <div class="form-group label-style">
                             <label for="confirm_password"> Confirm Password:</label>
-                            <input type="text" class="form-control" id="confirm_password" name='confirm_password'
+                            <input type="password" class="form-control" id="confirm_password" name='confirm_password'
                                    required
                                    autocomplete="new-password">
                         </div>
