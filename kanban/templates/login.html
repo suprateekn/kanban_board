@@ -8,7 +8,7 @@
                 <h2 class="text-center header">LOGIN</h2>
             </div>
             <div style="padding-top: 10px">
-                <form method="POST">
+                <form enctype="multipart/form-data" id="submit-form" method="POST">
                     {% csrf_token %}
                     <div class="form-group label-style">
                         <label for="username">Username:</label>

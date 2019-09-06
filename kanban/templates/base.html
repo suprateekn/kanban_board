@@ -12,9 +12,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+
     <title>{{ title }}</title>
 </head>
-<body style="background-image: linear-gradient(to top, #7b828c, #6c727f, #5e6171, #535163, #484155);">
+<body style="background-image: linear-gradient(to top, #cbcfd5, #abaeb3, #8c8d92, #6e6e73, #515155);">
 <div style="height: 100vh">
     <div class="container my-auto h-100">
 
@@ -29,9 +33,6 @@
 
 {% endblock %}
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
@@ -40,10 +41,12 @@
         crossorigin="anonymous"></script>
 
 <script>
-    let user_url = "{% url 'task_board:user' %}";
+    let user_api_url = "{% url 'task_board:user' %}";
+    let login_api_url = "{% url 'task_board:user-login' %}";
+    let login_page_url = "{% url 'login-page' %}"
 </script>
 
-<script type="text/javascript" src="{% static 'js/signup.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/login_signup.js' %}"></script>
 
 </body>
 </html>

@@ -20,7 +20,7 @@ from kanban.views import home_page, login_page, signup_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', login_page),
+    path('', login_page, name='login-page'),
     path('signup/', signup_page),
     path('home/', home_page),
     path('api/', include(('task_board.urls', 'task_board'), namespace='task_board')),
